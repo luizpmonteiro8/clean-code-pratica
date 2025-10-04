@@ -1,13 +1,8 @@
 class User {
-  constructor(name, password) {
+  constructor(name, email, password) {
     this.name = name;
+    this.email = email;
     this.password = password;
-  }
-
-  login(password) {
-    return this.password === password
-      ? "Login bem-sucedido!"
-      : "Senha incorreta.";
   }
 
   sayHello() {
