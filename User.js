@@ -4,6 +4,7 @@ class User {
   }
 
   sayHello() {
+    console.log(`Olá, ${this.name}!`);
     return `Olá, ${this.name}!`;
   }
 }
