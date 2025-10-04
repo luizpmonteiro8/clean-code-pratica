@@ -1,10 +1,14 @@
 class User {
-  constructor(name) {
+  constructor(name, email) {
     this.name = name;
+    this.email = email;
+  }
+
+  register() {
+    return `Usuário ${this.name} registrado com email ${this.email}.`;
   }
 
   sayHello() {
-    console.log(`Olá, ${this.name}!`);
     return `Olá, ${this.name}!`;
   }
 }
